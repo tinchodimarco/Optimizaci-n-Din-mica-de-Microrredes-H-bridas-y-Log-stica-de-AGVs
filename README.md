@@ -7,6 +7,10 @@ Para llevar un problema físico del mundo real al procesador cuántico, seguimos
 . Construcción de la Función de Costo (Hamiltoniano de Ising): El problema industrial se traduce en una función matemática de penalización compuesta por:
   - Términos Lineales ($Z_i$): Representan el costo operativo, distancia o consumo base de que cada AGV elija una ruta específica.
   - Términos de Interacción ($Z_0 Z_1$): Actúan como un "semáforo inteligente". Si ambos AGVs intentan ocupar el mismo carril o cuello de botella simultáneamente, se aplica un coeficiente de penalización alto en la función de costo.
+
 . Explotación del Hardware (Aria 1): En arquitecturas basadas en qubits superconductores tradicionales, las interacciones entre cúbits lejanos requieren compuertas $SWAP$ adicionales que acumulan ruido rápidamente. Al correr sobre IonQ Aria 1, las compuertas de entrelazamiento global ($ZZ$) se ejecutan de forma directa y limpia gracias a su conectividad all-to-all, permitiendo mantener la fidelidad en problemas con múltiples restricciones de tráfico.
 
 Este proyecto reduce los tiempos de inactividad por tráfico dentro de la nave industrial y además reduce los desgastes de la flota de maquinaria y los picos de demanda energética de la red.
+
+Link circuito en Qollab: https://qollab.xyz/u/tincho/optimizaci-n-din-mica-de-micro#run
+Link video: 
